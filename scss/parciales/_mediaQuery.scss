@@ -1,0 +1,113 @@
+@import './maps';
+
+@media screen and (max-width: 1200px) {
+    .fondoHeader{
+       display: none;
+    }
+    
+ }
+
+ @media screen and (max-width: 992px){
+
+    .pjs__liImg{
+      width: 100%;
+
+      ul{
+       display: none;
+      }
+    }
+
+    .cabecera__ingreso{
+        display: flex;
+        margin-left: map-get($size, cero);
+        margin-right: map-get($size, cero);
+        padding: map-get($size, cero);
+        border: none;
+
+        a{
+         background-color: transparent;
+         border: none;
+         color: green;
+        }
+        
+    }
+
+    .Info h2{
+        display: none;
+    }
+  
+    .cabecera__navIngr{
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+    }
+    
+    .cabecera__ingreso img{
+     display: none;
+    }
+
+    .navbar li{
+        border-bottom: black solid 1px;
+    }
+
+    .nav-link:hover{
+        animation: none;
+    }
+  
+    .navbar:hover{
+        box-shadow: none;
+        animation: none;
+    }
+
+    .pag2 h1{
+        display: none;
+    }
+    
+    .headerPag2{
+        display: flex;
+        justify-content: start;
+    }
+    
+    .navbar2{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    .pjs h3{
+        display: flex;
+        text-decoration: underline;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .cabecera__imagenes img{
+        width: 40%;
+    }
+    
+    .saga iframe{
+        display: none;
+    }
+    
+    .saga__Shrek{
+        padding: 0;
+        margin: 0.5rem;
+        border: none;
+        border-radius: 10%;
+        box-shadow: 1rem 2rem 2rem 0 black;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .buttonUp{
+        display: none;
+    }
+
+    .navbar2{
+        &:hover{
+         box-shadow: none;
+         animation: none;
+        }
+    }
+
+ }

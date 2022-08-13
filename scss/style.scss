@@ -1,0 +1,136 @@
+@import './parciales/aux';
+@import './parciales/variables';
+@import './parciales/maps';
+
+
+%centerText{
+  text-align: center;
+}
+
+%centerItems{
+  display: flex;
+  align-items: center;
+}
+
+%fondoDegrade{
+  background: $colorFondoSaga;
+  background: linear-gradient(180deg,nth($coloresDegrade, 1) 0%, nth($coloresDegrade, 2) 30%,nth($coloresDegrade, 3) 90%, nth($coloresDegrade, 1) 100%);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul li:hover ul {
+  display:block;
+}
+
+.cabecera__ingreso {
+   display: flex;
+   margin-left: map-get($size, dos);
+   margin-right: map-get($size, dos);
+   padding: map-get($size, medio);
+   border: 0.2rem inset rgb(206,230,30);
+   border-radius: map-get($size, medio);
+
+  a{
+      background-color: rgb(255, 255, 0);
+      border: 0.15rem solid black;
+      border-radius: 20%;
+  }
+}
+
+.imagenesCarousel{
+    background-color: $colorFondoImagenes;
+}
+
+
+
+.saga{
+  @extend %fondoDegrade;
+}
+
+header{
+  @extend %fondoDegrade;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.saga__Shrek {
+    padding: map-get($size, tres);
+    border: LimeGreen groove 2rem;
+    margin: map-get($size, tres);
+}
+
+h2 {
+   @extend %centerText;
+}
+
+.saga__Shrek h3{
+  @extend %centerText;
+  grid-area: title;
+  text-decoration: underline;
+}
+
+.gridItemSaga{
+  display: flex;
+  grid-area: parrafo;
+
+  p{
+    display: flex;
+    @extend %centerItems;
+    padding: 4rem;
+  }
+
+}
+
+.pjs__liImg{
+  @extend %centerItems;
+
+  ul li{
+   padding: 1.7rem;
+   font-size: 1.7rem;
+   font-weight: bold;
+   list-style-type: circle;
+  }
+}
+ 
+.contenedor{
+
+   background: nth($coloresDegrade, 2);
+   background: linear-gradient(180deg, nth($coloresDegrade,1) 0%, rgba(152,255,152,1) 50%);
+
+  ul {
+    @extend %centerText;
+    list-style: none;
+  }
+
+  ul a{
+    color: black;
+  }
+}
+
+
+
+
+.conteiner .carousel-indicators .boton0{
+  background-color: map-get($randomColors , color1);
+
+}
+.conteiner .carousel-indicators .boton1{
+  background-color: map-get($randomColors , color2);
+}
+.conteiner .carousel-indicators .boton2{
+  background-color: map-get($randomColors , color3);
+}
+.conteiner .carousel-indicators .boton3{
+  background-color: map-get($randomColors , color4);
+}
+.conteiner .carousel-indicators .boton4{
+  background-color: map-get($randomColors , color5);
+}
+
+
+@import './parciales/mediaQuery';

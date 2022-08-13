@@ -1,0 +1,45 @@
+
+.nav-link{
+  &:hover{
+    animation: jump 2s infinite;
+  }
+
+ 
+ @keyframes jump{
+    25%{
+       transform: scale(1.5);
+    }
+    50%{
+       transform: scale(1);
+    }
+    75%{
+       transform: scale(1.5);
+    }
+ }
+}
+
+.saga__Shrek{
+   &:hover{
+      background-color: rgba(255, 255, 0, 0.534);
+      animation: rotar 0.5s;
+    }
+
+    @keyframes rotar{
+      50%{
+         transform: rotateY(45deg);
+      }
+   }
+}
+
+.contenedor{
+   
+   ul a:hover{
+      animation: agrandar 1.5s;
+   }
+
+   @keyframes agrandar {
+      50%{
+         transform: scale(2);
+      }
+   }
+}
