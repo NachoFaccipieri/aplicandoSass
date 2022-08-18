@@ -27,6 +27,13 @@ ul li:hover ul {
   display:block;
 }
 
+
+header{
+  @extend %fondoDegrade;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 .cabecera__ingreso {
    display: flex;
    margin-left: map-get($size, dos);
@@ -42,8 +49,25 @@ ul li:hover ul {
   }
 }
 
-.imagenesCarousel{
-    background-color: $colorFondoImagenes;
+.cabecera__navIngr{
+  display: flex;
+  justify-content: center;
+}
+
+.cabecera__avatar{
+  height: 2rem;
+  width: 2rem;
+  margin: 0.3rem;
+}
+
+.navbar{
+  font-weight: bold;
+}
+
+.Info{
+  background-color: rgb(153, 255, 0);
+  border: green 0.5rem double;
+  margin: 4rem;
 }
 
 
@@ -52,11 +76,7 @@ ul li:hover ul {
   @extend %fondoDegrade;
 }
 
-header{
-  @extend %fondoDegrade;
-  background-position: right;
-  background-repeat: no-repeat;
-}
+
 
 .saga__Shrek {
     padding: map-get($size, tres);
@@ -64,14 +84,37 @@ header{
     margin: map-get($size, tres);
 }
 
-h2 {
-   @extend %centerText;
+
+h2{
+  font-size: 4.1rem;
+  padding: 3rem;
+  @extend %centerText;
+}
+
+
+.Info h2{
+  text-decoration: underline;
+}
+
+.saga h2{
+  background-image: repeating-radial-gradient(GreenYellow, LimeGreen 10%, LawnGreen 15%);
+  font-family: Papyrus,fantasy;
+  border: outset green 1rem;
 }
 
 .saga__Shrek h3{
   @extend %centerText;
   grid-area: title;
   text-decoration: underline;
+}
+
+.gridConteinerSaga{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2rem 1fr;
+  grid-template-areas:
+  "title title"
+  "parrafo parrafo"
 }
 
 .gridItemSaga{
@@ -112,24 +155,147 @@ h2 {
   }
 }
 
+.saga__flex {
+  display: flex;
+  p{
+    padding: 4rem;
+  }
+}
+
+.buttonUp{
+  border: 2px solid green;
+  color: greenyellow;
+  border-radius: 40%;
+  padding: 1.2rem;
+  font-size: 2rem;
+  background-color: white;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
 
 
 
-.conteiner .carousel-indicators .boton0{
-  background-color: map-get($randomColors , color1);
+
+/* -----> Segundo HTML <-------- */
+/* -----> Segundo HTML <-------- */
+/* -----> Segundo HTML <-------- */
+
+
+
+.pag2{
+  background: rgb(138,255,0);
+  background: radial-gradient(circle, rgba(138,255,0,1) 0%, rgba(0,255,0,0.7707457983193278) 45%, rgba(152,255,152,1) 100%);
+}
+
+.navbar2{
+  font-weight: bold;
+  border: 1px black solid;
+  padding: 1rem;
+  height: 70%;
+}
+
+.headerPag2{
+  display: flex;
+  justify-content: space-around;
+}
+
+.pjs {
+   width: 90%;
+   margin: auto;
+
+   h3{
+    display: none;
+   }
 
 }
-.conteiner .carousel-indicators .boton1{
-  background-color: map-get($randomColors , color2);
+
+.imagenesCarousel{
+  background-color: $colorFondoImagenes;
 }
-.conteiner .carousel-indicators .boton2{
-  background-color: map-get($randomColors , color3);
+
+.img1 {
+  background-image: url(../Imagenes/Shrek.png);
 }
-.conteiner .carousel-indicators .boton3{
-  background-color: map-get($randomColors , color4);
+
+.img2 {
+  background-image: url(../Imagenes/Fiona.png);
 }
-.conteiner .carousel-indicators .boton4{
-  background-color: map-get($randomColors , color5);
+
+.img3 {
+  background-image: url(../Imagenes/Burro.png);
+}
+
+.img4{
+  background-image: url(../Imagenes/Gato.png);
+}
+
+.img5{
+  background-image: url(../Imagenes/Harold.png);
+}
+
+
+.conteiner{
+  .carousel-indicators{
+    position: relative;
+
+    button{
+      width: 27px;
+      height: 17px;
+      border-radius: 50%;
+    }
+
+    .boton0{
+      background-color: map-get($randomColors , color1);
+    }
+
+    .boton1{
+      background-color: map-get($randomColors , color2);
+    }
+
+    .boton2{
+      background-color: map-get($randomColors , color3);
+    }
+
+    .boton3{
+      background-color: map-get($randomColors , color4);
+    }
+
+    .boton4{
+      background-color: map-get($randomColors , color5);
+    }
+  }
+  .carousel-controls{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    z-index: 1;
+    transform: translateX(-50%);
+ }
+}
+
+
+.carousel-control-prev, .carousel-control-next{
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 50;
+  color: black;
+}
+
+.carousel-item {
+  background-attachment:fixed;
+  background-repeat: repeat;
+  background-position: center;
+  border: solid 0.31rem black;
+}
+
+.descripcion{
+  margin: 2rem;
+  background-color: #ffffffa9;
+  border: 0.2rem solid black;
 }
 
 

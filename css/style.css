@@ -13,6 +13,32 @@
   }
 }
 
+.navbar:hover:hover {
+  box-shadow: 0 0 25px rgb(0, 0, 0);
+  animation: fondo 1s both;
+}
+
+@keyframes fondo {
+  50% {
+    background-color: rgba(255, 255, 255, 0.151);
+  }
+  100% {
+    background-color: rgba(0, 255, 64, 0.514);
+  }
+}
+.navbar2:hover {
+  box-shadow: 0 0 25px rgb(0, 0, 0);
+  animation: fondo2 1s both;
+}
+
+@keyframes fondo2 {
+  50% {
+    background-color: rgba(255, 255, 255, 0.151);
+  }
+  100% {
+    background-color: rgb(159, 255, 0);
+  }
+}
 .saga__Shrek:hover {
   background-color: rgba(255, 255, 0, 0.534);
   animation: rotar 0.5s;
@@ -32,6 +58,19 @@
   }
 }
 
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  box-shadow: 0 0 15px #385300;
+  color: yellow;
+}
+
+.carousel-control-prev {
+  left: -30px;
+}
+
+.carousel-control-next {
+  right: -30px;
+}
+
 .contenedor ul, .saga__Shrek h3, h2 {
   text-align: center;
 }
@@ -41,7 +80,7 @@
   align-items: center;
 }
 
-header, .saga {
+.saga, header {
   background: rgb(159, 255, 0);
   background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(159, 255, 0) 30%, rgb(152, 255, 152) 90%, rgb(255, 255, 255) 100%);
 }
@@ -53,6 +92,11 @@ header, .saga {
 
 ul li:hover ul {
   display: block;
+}
+
+header {
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .cabecera__ingreso {
@@ -69,13 +113,25 @@ ul li:hover ul {
   border-radius: 20%;
 }
 
-.imagenesCarousel {
-  background-color: rgba(253, 255, 253, 0.658);
+.cabecera__navIngr {
+  display: flex;
+  justify-content: center;
 }
 
-header {
-  background-position: right;
-  background-repeat: no-repeat;
+.cabecera__avatar {
+  height: 2rem;
+  width: 2rem;
+  margin: 0.3rem;
+}
+
+.navbar {
+  font-weight: bold;
+}
+
+.Info {
+  background-color: rgb(153, 255, 0);
+  border: green 0.5rem double;
+  margin: 4rem;
 }
 
 .saga__Shrek {
@@ -84,9 +140,31 @@ header {
   margin: 3rem;
 }
 
+h2 {
+  font-size: 4.1rem;
+  padding: 3rem;
+}
+
+.Info h2 {
+  text-decoration: underline;
+}
+
+.saga h2 {
+  background-image: repeating-radial-gradient(GreenYellow, LimeGreen 10%, LawnGreen 15%);
+  font-family: Papyrus, fantasy;
+  border: outset green 1rem;
+}
+
 .saga__Shrek h3 {
   grid-area: title;
   text-decoration: underline;
+}
+
+.gridConteinerSaga {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2rem 1fr;
+  grid-template-areas: "title title" "parrafo parrafo";
 }
 
 .gridItemSaga {
@@ -116,24 +194,129 @@ header {
   color: black;
 }
 
+.saga__flex {
+  display: flex;
+}
+.saga__flex p {
+  padding: 4rem;
+}
+
+.buttonUp {
+  border: 2px solid green;
+  color: greenyellow;
+  border-radius: 40%;
+  padding: 1.2rem;
+  font-size: 2rem;
+  background-color: white;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+/* -----> Segundo HTML <-------- */
+/* -----> Segundo HTML <-------- */
+/* -----> Segundo HTML <-------- */
+.pag2 {
+  background: rgb(138, 255, 0);
+  background: radial-gradient(circle, rgb(138, 255, 0) 0%, rgba(0, 255, 0, 0.7707457983) 45%, rgb(152, 255, 152) 100%);
+}
+
+.navbar2 {
+  font-weight: bold;
+  border: 1px black solid;
+  padding: 1rem;
+  height: 70%;
+}
+
+.headerPag2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pjs {
+  width: 90%;
+  margin: auto;
+}
+.pjs h3 {
+  display: none;
+}
+
+.imagenesCarousel {
+  background-color: rgba(253, 255, 253, 0.658);
+}
+
+.img1 {
+  background-image: url(../Imagenes/Shrek.png);
+}
+
+.img2 {
+  background-image: url(../Imagenes/Fiona.png);
+}
+
+.img3 {
+  background-image: url(../Imagenes/Burro.png);
+}
+
+.img4 {
+  background-image: url(../Imagenes/Gato.png);
+}
+
+.img5 {
+  background-image: url(../Imagenes/Harold.png);
+}
+
+.conteiner .carousel-indicators {
+  position: relative;
+}
+.conteiner .carousel-indicators button {
+  width: 27px;
+  height: 17px;
+  border-radius: 50%;
+}
 .conteiner .carousel-indicators .boton0 {
   background-color: aqua;
 }
-
 .conteiner .carousel-indicators .boton1 {
   background-color: brown;
 }
-
 .conteiner .carousel-indicators .boton2 {
   background-color: yellow;
 }
-
 .conteiner .carousel-indicators .boton3 {
   background-color: violet;
 }
-
 .conteiner .carousel-indicators .boton4 {
   background-color: purple;
+}
+.conteiner .carousel-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.carousel-control-prev, .carousel-control-next {
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 50;
+  color: black;
+}
+
+.carousel-item {
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: center;
+  border: solid 0.31rem black;
+}
+
+.descripcion {
+  margin: 2rem;
+  background-color: rgba(255, 255, 255, 0.662745098);
+  border: 0.2rem solid black;
 }
 
 @media screen and (max-width: 1200px) {

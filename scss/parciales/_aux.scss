@@ -18,6 +18,39 @@
  }
 }
 
+.navbar:hover{
+   &:hover{
+   box-shadow: 0 0 25px rgb(0, 0, 0);
+   animation: fondo 1s both;
+   }
+}
+
+@keyframes fondo {
+   50%{
+      background-color: rgba(255, 255, 255, 0.151);
+   }
+
+   100%{
+      background-color: rgba(0, 255, 64, 0.514);
+   }
+
+}
+
+
+.navbar2:hover{
+   box-shadow: 0 0 25px rgb(0, 0, 0);
+   animation: fondo2 1s both;
+}
+
+@keyframes fondo2 {
+   50%{
+      background-color: rgba(255, 255, 255, 0.151);
+   }
+   100%{
+      background-color: rgb(159,255,0,1);
+   }
+}
+
 .saga__Shrek{
    &:hover{
       background-color: rgba(255, 255, 0, 0.534);
@@ -42,4 +75,17 @@
          transform: scale(2);
       }
    }
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+   box-shadow: 0 0 15px #385300;
+   color: yellow;
+}
+
+.carousel-control-prev{
+   left: -30px;
+}
+
+.carousel-control-next{
+   right: -30px;
 }
