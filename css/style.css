@@ -13,7 +13,7 @@
   }
 }
 
-.navbar:hover:hover {
+.navbar:hover {
   box-shadow: 0 0 25px rgb(0, 0, 0);
   animation: fondo 1s both;
 }
@@ -71,7 +71,7 @@
   right: -30px;
 }
 
-.contenedor ul, .saga__Shrek h3, h2 {
+.contenedor ul, .saga__Shrek h3, .Info h2, h1 {
   text-align: center;
 }
 
@@ -101,8 +101,8 @@ header {
 
 .cabecera__ingreso {
   display: flex;
-  margin-left: 2rem;
   margin-right: 2rem;
+  margin-left: 2rem;
   padding: 0.5rem;
   border: 0.2rem inset rgb(206, 230, 30);
   border-radius: 0.5rem;
@@ -134,25 +134,27 @@ header {
   margin: 4rem;
 }
 
+h1 {
+  font-size: 3rem;
+  font-family: "Indie Flower", Papyrus, fantasy;
+  text-decoration: underline;
+}
+
 .saga__Shrek {
   padding: 3rem;
   border: LimeGreen groove 2rem;
   margin: 3rem;
 }
 
-h2 {
-  font-size: 4.1rem;
+.Info h2 {
+  text-decoration: underline;
   padding: 3rem;
 }
 
-.Info h2 {
-  text-decoration: underline;
-}
-
-.saga h2 {
+.saga h1 {
   background-image: repeating-radial-gradient(GreenYellow, LimeGreen 10%, LawnGreen 15%);
-  font-family: Papyrus, fantasy;
   border: outset green 1rem;
+  padding: 3rem;
 }
 
 .saga__Shrek h3 {
@@ -269,8 +271,8 @@ h2 {
   position: relative;
 }
 .conteiner .carousel-indicators button {
-  width: 27px;
   height: 17px;
+  width: 27px;
   border-radius: 50%;
 }
 .conteiner .carousel-indicators .boton0 {
@@ -324,7 +326,7 @@ h2 {
     display: none;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .pjs__liImg {
     width: 100%;
   }

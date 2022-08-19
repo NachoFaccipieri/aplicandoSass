@@ -1,6 +1,7 @@
 @import './parciales/aux';
 @import './parciales/variables';
 @import './parciales/maps';
+@import './parciales/mixin';
 
 
 %centerText{
@@ -36,8 +37,7 @@ header{
 
 .cabecera__ingreso {
    display: flex;
-   margin-left: map-get($size, dos);
-   margin-right: map-get($size, dos);
+   @include margenes(map-get($size, dos), map-get($size, dos));
    padding: map-get($size, medio);
    border: 0.2rem inset rgb(206,230,30);
    border-radius: map-get($size, medio);
@@ -55,8 +55,9 @@ header{
 }
 
 .cabecera__avatar{
-  height: 2rem;
-  width: 2rem;
+  @include altoAncho(map-get($size, dos), map-get($size, dos));
+  // height: 2rem;
+  // width: 2rem;
   margin: 0.3rem;
 }
 
@@ -76,6 +77,12 @@ header{
   @extend %fondoDegrade;
 }
 
+h1{
+  font-size: 3rem;
+  font-family: 'Indie Flower', Papyrus,fantasy;
+  text-decoration: underline;
+  @extend %centerText;
+}
 
 
 .saga__Shrek {
@@ -85,21 +92,16 @@ header{
 }
 
 
-h2{
-  font-size: 4.1rem;
+.Info h2{
+  text-decoration: underline;
   padding: 3rem;
   @extend %centerText;
 }
 
-
-.Info h2{
-  text-decoration: underline;
-}
-
-.saga h2{
+.saga h1{
   background-image: repeating-radial-gradient(GreenYellow, LimeGreen 10%, LawnGreen 15%);
-  font-family: Papyrus,fantasy;
   border: outset green 1rem;
+  padding: 3rem;
 }
 
 .saga__Shrek h3{
@@ -240,8 +242,9 @@ h2{
     position: relative;
 
     button{
-      width: 27px;
-      height: 17px;
+      @include altoAncho(17px, 27px);
+      // width: 27px;
+      // height: 17px;
       border-radius: 50%;
     }
 
@@ -276,8 +279,9 @@ h2{
 
 
 .carousel-control-prev, .carousel-control-next{
-  height: 2.5rem;
-  width: 2.5rem;
+  @include altoAncho(map-get($size, dos5), map-get($size, dos5));
+  // height: 2.5rem;
+  // width: 2.5rem;
   font-size: 3rem;
   border-radius: 50%;
   transition: all 0.3s ease;

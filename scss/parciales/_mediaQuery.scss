@@ -7,7 +7,7 @@
     
  }
 
- @media screen and (max-width: 992px){
+ @media screen and (max-width: 991px){
 
     .pjs__liImg{
       width: 100%;
@@ -54,9 +54,11 @@
         animation: none;
     }
   
-    .navbar:hover{
-        box-shadow: none;
-        animation: none;
+    .navbar{
+        &:hover{
+         box-shadow: none;
+         animation: none;
+        }
     }
 
     .pag2 h1{
@@ -110,4 +112,4 @@
         }
     }
 
- }
+}
