@@ -69,12 +69,16 @@ header{
   background-color: rgb(153, 255, 0);
   border: green 0.5rem double;
   margin: 4rem;
-}
 
+  h2{
+    text-decoration: underline;
+    padding: 3rem;
+    @extend %centerText;
+  }
 
-
-.saga{
-  @extend %fondoDegrade;
+  p{
+    font-weight: 450;
+  }
 }
 
 h1{
@@ -85,30 +89,37 @@ h1{
 }
 
 
+.saga{
+  @extend %fondoDegrade;
+
+  h1{
+    background-image: repeating-radial-gradient(GreenYellow, LimeGreen 10%, LawnGreen 15%);
+    border: outset green 1rem;
+    padding: 3rem;
+  }
+}
+
+
+
 .saga__Shrek {
     padding: map-get($size, tres);
     border: LimeGreen groove 2rem;
     margin: map-get($size, tres);
+
+    h3{
+      @extend %centerText;
+      grid-area: title;
+      text-decoration: underline;
+    }
 }
 
-
-.Info h2{
-  text-decoration: underline;
-  padding: 3rem;
-  @extend %centerText;
+.saga__flex {
+  display: flex;
+  p{
+    padding: 4rem;
+  }
 }
 
-.saga h1{
-  background-image: repeating-radial-gradient(GreenYellow, LimeGreen 10%, LawnGreen 15%);
-  border: outset green 1rem;
-  padding: 3rem;
-}
-
-.saga__Shrek h3{
-  @extend %centerText;
-  grid-area: title;
-  text-decoration: underline;
-}
 
 .gridConteinerSaga{
   display: grid;
@@ -128,7 +139,6 @@ h1{
     @extend %centerItems;
     padding: 4rem;
   }
-
 }
 
 .pjs__liImg{
@@ -157,12 +167,7 @@ h1{
   }
 }
 
-.saga__flex {
-  display: flex;
-  p{
-    padding: 4rem;
-  }
-}
+
 
 .buttonUp{
   border: 2px solid green;
@@ -243,8 +248,6 @@ h1{
 
     button{
       @include altoAncho(17px, 27px);
-      // width: 27px;
-      // height: 17px;
       border-radius: 50%;
     }
 

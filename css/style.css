@@ -71,7 +71,7 @@
   right: -30px;
 }
 
-.contenedor ul, .saga__Shrek h3, .Info h2, h1 {
+.contenedor ul, .saga__Shrek h3, h1, .Info h2 {
   text-align: center;
 }
 
@@ -133,22 +133,18 @@ header {
   border: green 0.5rem double;
   margin: 4rem;
 }
+.Info h2 {
+  text-decoration: underline;
+  padding: 3rem;
+}
+.Info p {
+  font-weight: 450;
+}
 
 h1 {
   font-size: 3rem;
   font-family: "Indie Flower", Papyrus, fantasy;
   text-decoration: underline;
-}
-
-.saga__Shrek {
-  padding: 3rem;
-  border: LimeGreen groove 2rem;
-  margin: 3rem;
-}
-
-.Info h2 {
-  text-decoration: underline;
-  padding: 3rem;
 }
 
 .saga h1 {
@@ -157,9 +153,21 @@ h1 {
   padding: 3rem;
 }
 
+.saga__Shrek {
+  padding: 3rem;
+  border: LimeGreen groove 2rem;
+  margin: 3rem;
+}
 .saga__Shrek h3 {
   grid-area: title;
   text-decoration: underline;
+}
+
+.saga__flex {
+  display: flex;
+}
+.saga__flex p {
+  padding: 4rem;
 }
 
 .gridConteinerSaga {
@@ -194,13 +202,6 @@ h1 {
 }
 .contenedor ul a {
   color: black;
-}
-
-.saga__flex {
-  display: flex;
-}
-.saga__flex p {
-  padding: 4rem;
 }
 
 .buttonUp {
