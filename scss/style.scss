@@ -56,8 +56,6 @@ header{
 
 .cabecera__avatar{
   @include altoAncho(map-get($size, dos), map-get($size, dos));
-  // height: 2rem;
-  // width: 2rem;
   margin: 0.3rem;
 }
 
@@ -241,6 +239,14 @@ h1{
   background-image: url(../Imagenes/Harold.png);
 }
 
+.img6{
+  background-image: url(../Imagenes/Rumpel.png);
+}
+
+.img7{
+  background-image: url(../Imagenes/Dragona.png);
+}
+
 
 .conteiner{
   .carousel-indicators{
@@ -270,6 +276,14 @@ h1{
     .boton4{
       background-color: map-get($randomColors , color5);
     }
+
+    .boton5{
+      background-color: map-get($randomColors , color6);
+    }
+
+    .boton6{
+      background-color: map-get($randomColors , color7);
+    }
   }
   .carousel-controls{
     position: absolute;
@@ -283,8 +297,6 @@ h1{
 
 .carousel-control-prev, .carousel-control-next{
   @include altoAncho(map-get($size, dos5), map-get($size, dos5));
-  // height: 2.5rem;
-  // width: 2.5rem;
   font-size: 3rem;
   border-radius: 50%;
   transition: all 0.3s ease;
