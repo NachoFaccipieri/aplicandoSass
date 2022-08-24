@@ -4,3 +4,4 @@ Agregué Keywords (18 palabras línea 17 del Index "Película, animación, Infan
 Los atributos "alt" de las imágenes los tenía ya aplicados.
 Le agregué la estiqueta STRONG al párrafo de "información" (línea 74) y en CSS le agregué "font-weight: 450" para que no aparezca en negrita.
 Le agregué un H1 al Index (línea 85) ya que no tenía ninguno "Shrek la saga".
+Lorems eliminados, descripciones agregadas en la segunda página.
