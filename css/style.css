@@ -71,157 +71,8 @@
   right: -30px;
 }
 
-.contenedor ul, .saga__Shrek h3, h1, .Info h2 {
-  text-align: center;
-}
-
-.pjs__liImg, .gridItemSaga p {
-  display: flex;
-  align-items: center;
-}
-
-.saga, header {
-  background: rgb(159, 255, 0);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(159, 255, 0) 30%, rgb(152, 255, 152) 90%, rgb(255, 255, 255) 100%);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ul li:hover ul {
-  display: block;
-}
-
-header {
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-.cabecera__ingreso {
-  display: flex;
-  margin-right: 2rem;
-  margin-left: 2rem;
-  padding: 0.5rem;
-  border: 0.2rem inset rgb(206, 230, 30);
-  border-radius: 0.5rem;
-}
-.cabecera__ingreso a {
-  background-color: rgb(255, 255, 0);
-  border: 0.15rem solid black;
-  border-radius: 20%;
-}
-
-.cabecera__navIngr {
-  display: flex;
-  justify-content: center;
-}
-
-.cabecera__avatar {
-  height: 2rem;
-  width: 2rem;
-  margin: 0.3rem;
-}
-
 .navbar {
   font-weight: bold;
-}
-
-.Info {
-  background-color: rgb(153, 255, 0);
-  border: green 0.5rem double;
-  margin: 4rem;
-}
-.Info h2 {
-  text-decoration: underline;
-  padding: 3rem;
-}
-.Info p {
-  font-weight: 450;
-}
-
-h1 {
-  font-size: 3rem;
-  font-family: "Indie Flower", Papyrus, fantasy;
-  text-decoration: underline;
-}
-
-.saga h1 {
-  background-image: repeating-radial-gradient(GreenYellow, LimeGreen 10%, LawnGreen 15%);
-  border: outset green 1rem;
-  padding: 3rem;
-}
-
-.saga__Shrek {
-  padding: 3rem;
-  border: LimeGreen groove 2rem;
-  margin: 3rem;
-}
-.saga__Shrek h3 {
-  grid-area: title;
-  text-decoration: underline;
-}
-
-.saga__flex {
-  display: flex;
-}
-.saga__flex p {
-  padding: 4rem;
-}
-
-.gridConteinerSaga {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2rem 1fr;
-  grid-template-areas: "title title" "parrafo parrafo";
-}
-
-.gridItemSaga {
-  display: flex;
-  grid-area: parrafo;
-}
-.gridItemSaga p {
-  display: flex;
-  padding: 4rem;
-}
-
-.pjs__liImg ul li {
-  padding: 1.7rem;
-  font-size: 1.7rem;
-  font-weight: bold;
-  list-style-type: circle;
-}
-
-.contenedor {
-  background: rgb(159, 255, 0);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(152, 255, 152) 50%);
-}
-.contenedor ul {
-  list-style: none;
-}
-.contenedor ul a {
-  color: black;
-}
-
-.buttonUp {
-  border: 2px solid green;
-  color: greenyellow;
-  border-radius: 40%;
-  padding: 1.2rem;
-  font-size: 2rem;
-  background-color: white;
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-}
-
-/* -----> Segundo HTML <-------- */
-/* -----> Segundo HTML <-------- */
-/* -----> Segundo HTML <-------- */
-.pag2 {
-  background: rgb(138, 255, 0);
-  background: radial-gradient(circle, rgb(138, 255, 0) 0%, rgba(0, 255, 0, 0.7707457983) 45%, rgb(152, 255, 152) 100%);
 }
 
 .navbar2 {
@@ -231,17 +82,11 @@ h1 {
   height: 70%;
 }
 
-.headerPag2 {
-  display: flex;
-  justify-content: space-around;
-}
-
-.pjs {
-  width: 90%;
-  margin: auto;
-}
-.pjs h3 {
-  display: none;
+.pjs__liImg ul li {
+  padding: 1.7rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  list-style-type: circle;
 }
 
 .imagenesCarousel {
@@ -311,6 +156,161 @@ h1 {
   bottom: 5px;
   z-index: 1;
   transform: translateX(-50%);
+}
+
+.contenedor ul, .saga__Shrek h3, h1, .Info h2 {
+  text-align: center;
+}
+
+.gridItemSaga p, .pjs__liImg {
+  display: flex;
+  align-items: center;
+}
+
+.saga, header {
+  background: rgb(159, 255, 0);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(159, 255, 0) 30%, rgb(152, 255, 152) 90%, rgb(255, 255, 255) 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+header {
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.cabecera__ingreso {
+  display: flex;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding: 0.5rem;
+  border: 0.2rem inset rgb(206, 230, 30);
+  border-radius: 0.5rem;
+}
+.cabecera__ingreso a {
+  background-color: rgb(255, 255, 0);
+  border: 0.15rem solid black;
+  border-radius: 20%;
+}
+
+.cabecera__navIngr {
+  display: flex;
+  justify-content: center;
+}
+
+.cabecera__avatar {
+  height: 2rem;
+  width: 2rem;
+  margin: 0.3rem;
+}
+
+.Info {
+  background-color: rgb(153, 255, 0);
+  border: green 0.5rem double;
+  margin: 4rem;
+}
+.Info h2 {
+  text-decoration: underline;
+  padding: 3rem;
+}
+.Info p {
+  font-weight: 450;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Indie Flower", Papyrus, fantasy;
+  text-decoration: underline;
+}
+
+.saga h1 {
+  background-image: repeating-radial-gradient(GreenYellow, LimeGreen 10%, LawnGreen 15%);
+  border: outset green 1rem;
+  padding: 3rem;
+}
+
+.saga__Shrek {
+  padding: 3rem;
+  border: LimeGreen groove 2rem;
+  margin: 3rem;
+}
+.saga__Shrek h3 {
+  grid-area: title;
+  text-decoration: underline;
+}
+
+.saga__flex {
+  display: flex;
+}
+.saga__flex p {
+  padding: 4rem;
+}
+
+.gridConteinerSaga {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2rem 1fr;
+  grid-template-areas: "title title" "parrafo parrafo";
+}
+
+.gridItemSaga {
+  display: flex;
+  grid-area: parrafo;
+}
+.gridItemSaga p {
+  display: flex;
+  padding: 4rem;
+}
+
+.contenedor {
+  background: rgb(159, 255, 0);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(152, 255, 152) 50%);
+}
+.contenedor ul {
+  list-style: none;
+}
+.contenedor ul a {
+  color: black;
+}
+
+.buttonUp {
+  border: 2px solid green;
+  color: greenyellow;
+  border-radius: 40%;
+  padding: 1.2rem;
+  font-size: 2rem;
+  background-color: white;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+/* -----> Segundo HTML <-------- */
+/* -----> Segundo HTML <-------- */
+/* -----> Segundo HTML <-------- */
+.pag2 {
+  background: rgb(138, 255, 0);
+  background: radial-gradient(circle, rgb(138, 255, 0) 0%, rgba(0, 255, 0, 0.7707457983) 45%, rgb(152, 255, 152) 100%);
+}
+
+.headerPag2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pjs {
+  width: 90%;
+  margin: auto;
+}
+.pjs h3 {
+  display: none;
 }
 
 .carousel-control-prev, .carousel-control-next {

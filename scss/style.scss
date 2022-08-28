@@ -2,6 +2,8 @@
 @import './parciales/variables';
 @import './parciales/maps';
 @import './parciales/mixin';
+@import './parciales/navbar';
+@import './parciales/cards';
 
 
 %centerText{
@@ -59,9 +61,7 @@ header{
   margin: 0.3rem;
 }
 
-.navbar{
-  font-weight: bold;
-}
+
 
 .Info{
   background-color: rgb(153, 255, 0);
@@ -138,17 +138,6 @@ h1{
     padding: 4rem;
   }
 }
-
-.pjs__liImg{
-  @extend %centerItems;
-
-  ul li{
-   padding: 1.7rem;
-   font-size: 1.7rem;
-   font-weight: bold;
-   list-style-type: circle;
-  }
-}
  
 .contenedor{
 
@@ -193,12 +182,7 @@ h1{
   background: radial-gradient(circle, rgba(138,255,0,1) 0%, rgba(0,255,0,0.7707457983193278) 45%, rgba(152,255,152,1) 100%);
 }
 
-.navbar2{
-  font-weight: bold;
-  border: 1px black solid;
-  padding: 1rem;
-  height: 70%;
-}
+
 
 .headerPag2{
   display: flex;
@@ -215,84 +199,6 @@ h1{
 
 }
 
-.imagenesCarousel{
-  background-color: $colorFondoImagenes;
-}
-
-.img1 {
-  background-image: url(../Imagenes/Shrek.png);
-}
-
-.img2 {
-  background-image: url(../Imagenes/Fiona.png);
-}
-
-.img3 {
-  background-image: url(../Imagenes/Burro.png);
-}
-
-.img4{
-  background-image: url(../Imagenes/Gato.png);
-}
-
-.img5{
-  background-image: url(../Imagenes/Harold.png);
-}
-
-.img6{
-  background-image: url(../Imagenes/Rumpel.png);
-}
-
-.img7{
-  background-image: url(../Imagenes/Dragona.png);
-}
-
-
-.conteiner{
-  .carousel-indicators{
-    position: relative;
-
-    button{
-      @include altoAncho(17px, 27px);
-      border-radius: 50%;
-    }
-
-    .boton0{
-      background-color: map-get($randomColors , color1);
-    }
-
-    .boton1{
-      background-color: map-get($randomColors , color2);
-    }
-
-    .boton2{
-      background-color: map-get($randomColors , color3);
-    }
-
-    .boton3{
-      background-color: map-get($randomColors , color4);
-    }
-
-    .boton4{
-      background-color: map-get($randomColors , color5);
-    }
-
-    .boton5{
-      background-color: map-get($randomColors , color6);
-    }
-
-    .boton6{
-      background-color: map-get($randomColors , color7);
-    }
-  }
-  .carousel-controls{
-    position: absolute;
-    left: 50%;
-    bottom: 5px;
-    z-index: 1;
-    transform: translateX(-50%);
- }
-}
 
 
 .carousel-control-prev, .carousel-control-next{
